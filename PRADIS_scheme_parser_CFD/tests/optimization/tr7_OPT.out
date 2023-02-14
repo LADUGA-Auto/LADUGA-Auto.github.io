@@ -1,0 +1,27 @@
+[ Module ]      |      [ Name ]       |      [ Active ]       |      [ Properties ]
+[ multi.Variable ] | [ N1 ] | [ true ]  |  [ Name : N1 : string ]    [ Value0 : 10 : integer ]    [ Min : 1 : integer ]    [ Max : 20 : integer ]    
+
+[ multi.Variable ] | [ N2 ] | [ true ]  |  [ Name : N2 : string ]    [ Value0 : 8 : integer ]    [ Min : 1 : integer ]    [ Max : 20 : integer ]    
+
+[ multi.Variable ] | [ N3 ] | [ true ]  |  [ Name : N3 : string ]    [ Value0 : 6 : integer ]    [ Min : 1 : integer ]    [ Max : 20 : integer ]    
+
+[ multi.Variable ] | [ N4 ] | [ true ]  |  [ Name : N4 : string ]    [ Value0 : 5 : integer ]    [ Min : 1 : integer ]    [ Max : 20 : integer ]    
+
+[ multi.Variable ] | [ N5 ] | [ true ]  |  [ Name : N5 : string ]    [ Value0 : 4 : integer ]    [ Min : 1 : integer ]    [ Max : 20 : integer ]    
+
+[ multi.Variable ] | [ T3 ] | [ true ]  |  [ Name : T3 : string ]    [ Value0 : 6 : integer ]    [ Min : 1 : integer ]    [ Max : 20 : integer ]    
+
+[ multi.Variable ] | [ T4 ] | [ true ]  |  [ Name : T4 : string ]    [ Value0 : 9 : integer ]    [ Min : 1 : integer ]    [ Max : 20 : integer ]    
+
+[ multi.Variable ] | [ T5 ] | [ true ]  |  [ Name : T5 : string ]    [ Value0 : 13 : integer ]    [ Min : 1 : integer ]    [ Max : 20 : integer ]    
+
+[ multi.Variable ] | [ T1 ] | [ true ]  |  [ Name : T1 : string ]    [ Value0 : 0.1 : double ]    [ Min : 0.001 : double ]    [ Max : 20 : integer ]    
+
+[ Data ] | [ UserFunction1 ] | [ true ]  |  [ Value : def UserFunction (x, ma)%dp;\n  v1 =  ma.f('lc1.Time60')\n  v2 =  ma.f('lc1.Time100')\n  v3 =  ma.f('lc1.Velocity')\n  v = - v3 + 20 * v2 + (v2-v1)*10\n\n  return v\n\ndef cf1(x, ma)%dp;\n  v = x[5]-x[6]+0.001\n  return v\n\ndef cf2(x, ma)%dp;\n  v = x[6]-x[7]+0.001\n  return v\n\ndef cf3(x, ma)%dp;\n  v = x[7]-x[8]+0.001\n  return v\n\ndef cf4(x, ma)%dp;\n  v = x[8]-x[9]+0.001\n  return v\n\n\ndef cf5(x, ma)%dp;\n  v =  ma.f('lc1.MaxTorque') - 10000\n  return v : string ]    
+
+[ multi.Variable ] | [ T2 ] | [ true ]  |  [ Name : T2 : string ]    [ Value0 : 4 : integer ]    [ Min : 1 : integer ]    [ Max : 20 : integer ]    
+
+[ multi.Optimization ] | [ Optimization1 ] | [ true ]  |  [ Method : NelderMead : string ]    [ Variables : N1,N2,N3,N4,N5,T1,T2,T3,T4,T5 : string ]    [ Loadcases : lc1 : string ]    [ Objective : UserFunction : string ]    [ Constraints : cf1,cf2,cf3,cf4,cf5 : string ]    [ XTol : 0.01 : double ]    [ FTol : 0.1 : double ]    [ MaxFunction : 100 : integer ]    [ A : 1e+06 : double ]    [ p : 4 : integer ]    
+
+[ multi.Loadcase ] | [ lc1 ] | [ true ]  |  [ Scheme_File : tr7_MULTI_2.sch.psl : string ]    [ Criteria :  : string ]    [ Solver : Time60,Time100,Velocity,MaxTorque : string ]    [ OpenSign : PRADIS_Dynamic : string ]    [ CloseSign : { : string ]    [  : } : string ]    
+

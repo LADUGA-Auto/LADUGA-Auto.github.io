@@ -1,0 +1,11 @@
+[ Module ]      |      [ Name ]       |      [ Active ]       |      [ Properties ]
+[ Data ] | [ UserFunction1 ] | [ true ]  |  [ Value : def UserFunction (x, ma)%dp;\n  v1 = ( ma.f('lc1.X1') -0.5)**2\n  v = v1\n\n  return v\n\ndef cf1(x, ma)%dp;\n  v = 0.6 - ma.f('lc1.X1')\n  return v : string ]    
+
+[ multi.Loadcase ] | [ lc2 ] | [ true ]  |  [ Scheme_File : multi_test1D3.psl : string ]    [ Criteria :  : string ]    [ Solver : X1,V1,A1 : string ]    [ OpenSign : PRADIS_Dynamic : string ]    [ CloseSign : { : string ]    [  : } : string ]    
+
+[ multi.Loadcase ] | [ lc1 ] | [ true ]  |  [ Scheme_File : multi_test1d.psl : string ]    [ Criteria :  : string ]    [ Solver : X1,V1,A1 : string ]    [ OpenSign : PRADIS_Dynamic : string ]    [ CloseSign : { : string ]    [  : } : string ]    
+
+[ multi.Variable ] | [ A ] | [ true ]  |  [ Name : A : string ]    [ Value0 : 500 : integer ]    [ Min : 1 : integer ]    [ Max : 1000 : integer ]    
+
+[ multi.Optimization ] | [ Optimization1d ] | [ true ]  |  [ Method : Opt_1D : string ]    [ Variables : A : string ]    [ Loadcases : lc1, lc2 : string ]    [ Objective : UserFunction : string ]    [ Constraints : cf1 : string ]    [ XTol : 0.01 : double ]    [ FTol : 0.01 : double ]    [ MaxFunction : 100 : integer ]    [ A : 1e+08 : double ]    [ p : 2 : integer ]    
+

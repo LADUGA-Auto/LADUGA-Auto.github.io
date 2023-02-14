@@ -1,0 +1,11 @@
+[ Module ]      |      [ Name ]       |      [ Active ]       |      [ Properties ]
+[ multi.Loadcase ] | [ lc1 ] | [ true ]  |  [ Scheme_File : fake_multi_test.psl : string ]    [ Criteria :  : string ]    [ Solver : X1,V1,A1 : string ]    [ OpenSign : PRADIS_Dynamic : string ]    [ CloseSign : { : string ]    [  : } : string ]    
+
+[ multi.Variable ] | [ A ] | [ true ]  |  [ Name : A : string ]    [ Value0 : 1.3 : double ]    [ Min : -2 : integer ]    [ Max : 2 : integer ]    
+
+[ multi.Variable ] | [ B ] | [ true ]  |  [ Name : B : string ]    [ Value0 : 0.7 : double ]    [ Min : -2 : integer ]    [ Max : 2 : integer ]    
+
+[ multi.Optimization ] | [ Optimization1 ] | [ true ]  |  [ Method : NelderMead : string ]    [ Variables : A,B : string ]    [ Loadcases : lc1 : string ]    [ Objective : UserFunction : string ]    [ Constraints :  : string ]    [ XTol : 0.0001 : double ]    [ FTol : 0.001 : double ]    [ MaxFunction : 100 : integer ]    [ A : 1e+08 : double ]    [ p : 4 : integer ]    
+
+[ Data ] | [ UserFunction1 ] | [ true ]  |  [ Value : def UserFunction (x, ma)%dp;\n  v1 = ( 1.0- x[0])**2+100.0* (x[1]-x[0]**2)**2\n  v = v1\n\n  return v\n\ndef cf1(x, ma)%dp;\n  v = -1.0\n  return v : string ]    
+

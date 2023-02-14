@@ -1,0 +1,167 @@
+\hypertarget{classsch__parser__property}{}\doxysection{sch\+\_\+parser\+\_\+property Class Reference}
+\label{classsch__parser__property}\index{sch\_parser\_property@{sch\_parser\_property}}
+
+
+Class \mbox{\hyperlink{classsch__parser__property}{sch\+\_\+parser\+\_\+property}}.  
+
+
+
+
+{\ttfamily \#include $<$PRADIS\+\_\+scheme\+\_\+parser.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsch__parser__property_aa53bd361f51a30fcd00330b3b8b6a567}{sch\+\_\+parser\+\_\+property}} ()
+\item 
+\mbox{\hyperlink{classsch__parser__property_a77d40e570274f72f6629ec2826797c34}{$\sim$sch\+\_\+parser\+\_\+property}} ()
+\item 
+void \mbox{\hyperlink{classsch__parser__property_a76169079502f0579f850ce523256ddf7}{get\+Type}} (int \&\mbox{\hyperlink{classsch__parser__property_a87ef983f6122870e66989aa503eca1d1}{type}})
+\item 
+bool \mbox{\hyperlink{classsch__parser__property_ad0e15e409f4aecc7479515b3d52b70cb}{get\+String\+Value}} (std\+::string \&\mbox{\hyperlink{classsch__parser__property_a053e6fb5aad25fc25c3f263e67d6cccd}{value}})
+\item 
+bool \mbox{\hyperlink{classsch__parser__property_a63d2f370841b9e9a7721d5882dde3546}{get\+Int\+Value}} (int \&\mbox{\hyperlink{classsch__parser__property_a053e6fb5aad25fc25c3f263e67d6cccd}{value}})
+\item 
+bool \mbox{\hyperlink{classsch__parser__property_ac30134304d97b314fff57065e2d7c621}{get\+Bool\+Value}} (bool \&\mbox{\hyperlink{classsch__parser__property_a053e6fb5aad25fc25c3f263e67d6cccd}{value}})
+\item 
+bool \mbox{\hyperlink{classsch__parser__property_ac2fdafbd93fb8f35fa752927b450a91f}{get\+Double\+Value}} (double \&\mbox{\hyperlink{classsch__parser__property_a053e6fb5aad25fc25c3f263e67d6cccd}{value}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8h_a8aaeba5aed18516d10d61fe3139c9d32}{Types}} \mbox{\hyperlink{classsch__parser__property_a87ef983f6122870e66989aa503eca1d1}{type}}
+\begin{DoxyCompactList}\small\item\em Value type. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classsch__parser__property_ae2434c41accf00ade2c988fe18086a99}{name}} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em Property name. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classsch__parser__property_a053e6fb5aad25fc25c3f263e67d6cccd}{value}}
+\begin{DoxyCompactList}\small\item\em Property value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{classsch__parser__property}{sch\+\_\+parser\+\_\+property}}. 
+
+This class that stores the name, value, and type of the property 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsch__parser__property_aa53bd361f51a30fcd00330b3b8b6a567}\label{classsch__parser__property_aa53bd361f51a30fcd00330b3b8b6a567}} 
+\index{sch\_parser\_property@{sch\_parser\_property}!sch\_parser\_property@{sch\_parser\_property}}
+\index{sch\_parser\_property@{sch\_parser\_property}!sch\_parser\_property@{sch\_parser\_property}}
+\doxysubsubsection{\texorpdfstring{sch\_parser\_property()}{sch\_parser\_property()}}
+{\footnotesize\ttfamily sch\+\_\+parser\+\_\+property\+::sch\+\_\+parser\+\_\+property (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsch__parser__property_a77d40e570274f72f6629ec2826797c34}\label{classsch__parser__property_a77d40e570274f72f6629ec2826797c34}} 
+\index{sch\_parser\_property@{sch\_parser\_property}!````~sch\_parser\_property@{$\sim$sch\_parser\_property}}
+\index{````~sch\_parser\_property@{$\sim$sch\_parser\_property}!sch\_parser\_property@{sch\_parser\_property}}
+\doxysubsubsection{\texorpdfstring{$\sim$sch\_parser\_property()}{~sch\_parser\_property()}}
+{\footnotesize\ttfamily sch\+\_\+parser\+\_\+property\+::$\sim$sch\+\_\+parser\+\_\+property (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsch__parser__property_ac30134304d97b314fff57065e2d7c621}\label{classsch__parser__property_ac30134304d97b314fff57065e2d7c621}} 
+\index{sch\_parser\_property@{sch\_parser\_property}!getBoolValue@{getBoolValue}}
+\index{getBoolValue@{getBoolValue}!sch\_parser\_property@{sch\_parser\_property}}
+\doxysubsubsection{\texorpdfstring{getBoolValue()}{getBoolValue()}}
+{\footnotesize\ttfamily bool sch\+\_\+parser\+\_\+property\+::get\+Bool\+Value (\begin{DoxyParamCaption}\item[{bool \&}]{value }\end{DoxyParamCaption})}
+
+Returns value if type of property value is boolean 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em value} & Link to the variable where the data should be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success, false if fail 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsch__parser__property_ac2fdafbd93fb8f35fa752927b450a91f}\label{classsch__parser__property_ac2fdafbd93fb8f35fa752927b450a91f}} 
+\index{sch\_parser\_property@{sch\_parser\_property}!getDoubleValue@{getDoubleValue}}
+\index{getDoubleValue@{getDoubleValue}!sch\_parser\_property@{sch\_parser\_property}}
+\doxysubsubsection{\texorpdfstring{getDoubleValue()}{getDoubleValue()}}
+{\footnotesize\ttfamily bool sch\+\_\+parser\+\_\+property\+::get\+Double\+Value (\begin{DoxyParamCaption}\item[{double \&}]{value }\end{DoxyParamCaption})}
+
+Returns value if type of property value is double 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em value} & Link to the variable where the data should be returned ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success, false if fail 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsch__parser__property_a63d2f370841b9e9a7721d5882dde3546}\label{classsch__parser__property_a63d2f370841b9e9a7721d5882dde3546}} 
+\index{sch\_parser\_property@{sch\_parser\_property}!getIntValue@{getIntValue}}
+\index{getIntValue@{getIntValue}!sch\_parser\_property@{sch\_parser\_property}}
+\doxysubsubsection{\texorpdfstring{getIntValue()}{getIntValue()}}
+{\footnotesize\ttfamily bool sch\+\_\+parser\+\_\+property\+::get\+Int\+Value (\begin{DoxyParamCaption}\item[{int \&}]{value }\end{DoxyParamCaption})}
+
+Returns value if type of property value is integer 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em value} & Link to the variable where the data should be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success, false if fail 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsch__parser__property_ad0e15e409f4aecc7479515b3d52b70cb}\label{classsch__parser__property_ad0e15e409f4aecc7479515b3d52b70cb}} 
+\index{sch\_parser\_property@{sch\_parser\_property}!getStringValue@{getStringValue}}
+\index{getStringValue@{getStringValue}!sch\_parser\_property@{sch\_parser\_property}}
+\doxysubsubsection{\texorpdfstring{getStringValue()}{getStringValue()}}
+{\footnotesize\ttfamily bool sch\+\_\+parser\+\_\+property\+::get\+String\+Value (\begin{DoxyParamCaption}\item[{std\+::string \&}]{value }\end{DoxyParamCaption})}
+
+Returns value if type of property value is string 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em value} & Link to the variable where the data should be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success, false if fail 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsch__parser__property_a76169079502f0579f850ce523256ddf7}\label{classsch__parser__property_a76169079502f0579f850ce523256ddf7}} 
+\index{sch\_parser\_property@{sch\_parser\_property}!getType@{getType}}
+\index{getType@{getType}!sch\_parser\_property@{sch\_parser\_property}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily void sch\+\_\+parser\+\_\+property\+::get\+Type (\begin{DoxyParamCaption}\item[{int \&}]{type }\end{DoxyParamCaption})}
+
+Returns type of property value 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em type} & Link to the variable where the data should be returned \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsch__parser__property_ae2434c41accf00ade2c988fe18086a99}\label{classsch__parser__property_ae2434c41accf00ade2c988fe18086a99}} 
+\index{sch\_parser\_property@{sch\_parser\_property}!name@{name}}
+\index{name@{name}!sch\_parser\_property@{sch\_parser\_property}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string sch\+\_\+parser\+\_\+property\+::name = \char`\"{}\char`\"{}}
+
+
+
+Property name. 
+
+\mbox{\Hypertarget{classsch__parser__property_a87ef983f6122870e66989aa503eca1d1}\label{classsch__parser__property_a87ef983f6122870e66989aa503eca1d1}} 
+\index{sch\_parser\_property@{sch\_parser\_property}!type@{type}}
+\index{type@{type}!sch\_parser\_property@{sch\_parser\_property}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8h_a8aaeba5aed18516d10d61fe3139c9d32}{Types}} sch\+\_\+parser\+\_\+property\+::type}
+
+
+
+Value type. 
+
+\mbox{\Hypertarget{classsch__parser__property_a053e6fb5aad25fc25c3f263e67d6cccd}\label{classsch__parser__property_a053e6fb5aad25fc25c3f263e67d6cccd}} 
+\index{sch\_parser\_property@{sch\_parser\_property}!value@{value}}
+\index{value@{value}!sch\_parser\_property@{sch\_parser\_property}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily std\+::string sch\+\_\+parser\+\_\+property\+::value}
+
+
+
+Property value. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8h}{PRADIS\+\_\+scheme\+\_\+parser.\+h}}\item 
+\mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp}{PRADIS\+\_\+scheme\+\_\+parser.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,89 @@
+\hypertarget{class_p_r_a_d_i_s__scheme__parser}{}\doxysection{PRADIS\+\_\+scheme\+\_\+parser Class Reference}
+\label{class_p_r_a_d_i_s__scheme__parser}\index{PRADIS\_scheme\_parser@{PRADIS\_scheme\_parser}}
+
+
+Public class that allows you to read data from the schema.  
+
+
+
+
+{\ttfamily \#include $<$PRADIS\+\_\+scheme\+\_\+parser.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_r_a_d_i_s__scheme__parser_a81cb6dab0e600cf719e4423f5c3ba2ff}{PRADIS\+\_\+scheme\+\_\+parser}} ()
+\item 
+bool \mbox{\hyperlink{class_p_r_a_d_i_s__scheme__parser_a5b7bb14eec0d89e091ee4ecf54eb28f0}{load}} (std\+::vector$<$ \mbox{\hyperlink{classsch__parser__component}{sch\+\_\+parser\+\_\+component}} $>$ \&list, std\+::string path)
+\item 
+bool \mbox{\hyperlink{class_p_r_a_d_i_s__scheme__parser_acbd4e3fb0d0da18a94d166ae5100caac}{load}} (std\+::vector$<$ \mbox{\hyperlink{classsch__parser__component}{sch\+\_\+parser\+\_\+component}} $>$ \&list, std\+::istream \&stream)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Public class that allows you to read data from the schema. 
+
+This class allows you to read the scheme both by file name and from the stream 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_r_a_d_i_s__scheme__parser_a81cb6dab0e600cf719e4423f5c3ba2ff}\label{class_p_r_a_d_i_s__scheme__parser_a81cb6dab0e600cf719e4423f5c3ba2ff}} 
+\index{PRADIS\_scheme\_parser@{PRADIS\_scheme\_parser}!PRADIS\_scheme\_parser@{PRADIS\_scheme\_parser}}
+\index{PRADIS\_scheme\_parser@{PRADIS\_scheme\_parser}!PRADIS\_scheme\_parser@{PRADIS\_scheme\_parser}}
+\doxysubsubsection{\texorpdfstring{PRADIS\_scheme\_parser()}{PRADIS\_scheme\_parser()}}
+{\footnotesize\ttfamily PRADIS\+\_\+scheme\+\_\+parser\+::\+PRADIS\+\_\+scheme\+\_\+parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_r_a_d_i_s__scheme__parser_acbd4e3fb0d0da18a94d166ae5100caac}\label{class_p_r_a_d_i_s__scheme__parser_acbd4e3fb0d0da18a94d166ae5100caac}} 
+\index{PRADIS\_scheme\_parser@{PRADIS\_scheme\_parser}!load@{load}}
+\index{load@{load}!PRADIS\_scheme\_parser@{PRADIS\_scheme\_parser}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool PRADIS\+\_\+scheme\+\_\+parser\+::load (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classsch__parser__component}{sch\+\_\+parser\+\_\+component}} $>$ \&}]{list,  }\item[{std\+::istream \&}]{stream }\end{DoxyParamCaption})}
+
+Read the .sch scheme by std\+::istream\& 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em list} & List of components read from the std\+::istream\& \\
+\hline
+\mbox{\texttt{ in}}  & {\em stream} & Stream open for reading \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em char} & const$\ast$ If unable to read from the stream \\
+\hline
+{\em const} & exception\& If the stream could not be opened \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+true if success, false if fail 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_r_a_d_i_s__scheme__parser_a5b7bb14eec0d89e091ee4ecf54eb28f0}\label{class_p_r_a_d_i_s__scheme__parser_a5b7bb14eec0d89e091ee4ecf54eb28f0}} 
+\index{PRADIS\_scheme\_parser@{PRADIS\_scheme\_parser}!load@{load}}
+\index{load@{load}!PRADIS\_scheme\_parser@{PRADIS\_scheme\_parser}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool PRADIS\+\_\+scheme\+\_\+parser\+::load (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classsch__parser__component}{sch\+\_\+parser\+\_\+component}} $>$ \&}]{list,  }\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+Read the .sch scheme by file name 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em list} & List of components read from the file \\
+\hline
+\mbox{\texttt{ in}}  & {\em path} & Path and file name to read \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em char} & const$\ast$ If unable to read from the file \\
+\hline
+{\em const} & exception\& If the file could not be opened \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+true if success, false if fail 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8h}{PRADIS\+\_\+scheme\+\_\+parser.\+h}}\item 
+\mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp}{PRADIS\+\_\+scheme\+\_\+parser.\+cpp}}\end{DoxyCompactItemize}

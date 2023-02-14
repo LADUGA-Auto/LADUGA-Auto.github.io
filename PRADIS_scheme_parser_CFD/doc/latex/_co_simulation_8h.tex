@@ -1,0 +1,104 @@
+\hypertarget{_co_simulation_8h}{}\doxysection{Co\+Simulation.\+h File Reference}
+\label{_co_simulation_8h}\index{CoSimulation.h@{CoSimulation.h}}
+{\ttfamily \#include \char`\"{}PRADIS\+\_\+scheme\+\_\+parser.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_port}{Port}}
+\begin{DoxyCompactList}\small\item\em Class for describing the PRADIS \char`\"{}\+Port\char`\"{} object  \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_fluid_domain}{Fluid\+Domain}}
+\begin{DoxyCompactList}\small\item\em Class for describing the PRADIS \char`\"{}\+Fluid domain\char`\"{} object  \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_solid_domain}{Solid\+Domain}}
+\begin{DoxyCompactList}\small\item\em Class for describing the PRADIS \char`\"{}\+Solid domain\char`\"{} object  \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_solver}{Solver}}
+\begin{DoxyCompactList}\small\item\em Class for describing the PRADIS \char`\"{}\+Solver\char`\"{} object  \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_task}{Task}}
+\begin{DoxyCompactList}\small\item\em Class for describing the PRADIS \char`\"{}\+Task\char`\"{} object  \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c_f_d_scheme}{CFDScheme}}
+\begin{DoxyCompactList}\small\item\em Structure for describing the CFD scheme  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_co_simulation_8h_a65abe5d8d494518769ce4ff98db5e34d}{is\+CFDPort}} (std\+::string Name)
+\begin{DoxyCompactList}\small\item\em Predicate for defining objects. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_co_simulation_8h_a577ccd69ff200e51d2c9d9badba0b451}{is\+Fluid\+Domain}} (std\+::string Name)
+\begin{DoxyCompactList}\small\item\em Predicate for defining objects. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_co_simulation_8h_a36464b2eb7dcab43e770a683b45288ae}{is\+Solid\+Domain}} (std\+::string Name)
+\begin{DoxyCompactList}\small\item\em Predicate for defining objects. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_co_simulation_8h_a188a203300a43754c438a2a09142947a}{is\+Solver}} (std\+::string Name)
+\begin{DoxyCompactList}\small\item\em Predicate for defining objects. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_co_simulation_8h_a949e548728e00e8c3e29719056aab572}{is\+Task}} (std\+::string Name)
+\begin{DoxyCompactList}\small\item\em Predicate for defining objects. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_co_simulation_8h_a0d3b4c4fb0554d8ccb04d12f01d3b028}{parse\+Co\+Simulation}} (std\+::vector$<$ \mbox{\hyperlink{classsch__parser__component}{sch\+\_\+parser\+\_\+component}} $>$ \&component\+List, \mbox{\hyperlink{struct_c_f_d_scheme}{CFDScheme}} \&scheme)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_co_simulation_8h_a65abe5d8d494518769ce4ff98db5e34d}\label{_co_simulation_8h_a65abe5d8d494518769ce4ff98db5e34d}} 
+\index{CoSimulation.h@{CoSimulation.h}!isCFDPort@{isCFDPort}}
+\index{isCFDPort@{isCFDPort}!CoSimulation.h@{CoSimulation.h}}
+\doxysubsubsection{\texorpdfstring{isCFDPort()}{isCFDPort()}}
+{\footnotesize\ttfamily bool is\+CFDPort (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+
+
+Predicate for defining objects. 
+
+\mbox{\Hypertarget{_co_simulation_8h_a577ccd69ff200e51d2c9d9badba0b451}\label{_co_simulation_8h_a577ccd69ff200e51d2c9d9badba0b451}} 
+\index{CoSimulation.h@{CoSimulation.h}!isFluidDomain@{isFluidDomain}}
+\index{isFluidDomain@{isFluidDomain}!CoSimulation.h@{CoSimulation.h}}
+\doxysubsubsection{\texorpdfstring{isFluidDomain()}{isFluidDomain()}}
+{\footnotesize\ttfamily bool is\+Fluid\+Domain (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+
+
+Predicate for defining objects. 
+
+\mbox{\Hypertarget{_co_simulation_8h_a36464b2eb7dcab43e770a683b45288ae}\label{_co_simulation_8h_a36464b2eb7dcab43e770a683b45288ae}} 
+\index{CoSimulation.h@{CoSimulation.h}!isSolidDomain@{isSolidDomain}}
+\index{isSolidDomain@{isSolidDomain}!CoSimulation.h@{CoSimulation.h}}
+\doxysubsubsection{\texorpdfstring{isSolidDomain()}{isSolidDomain()}}
+{\footnotesize\ttfamily bool is\+Solid\+Domain (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+
+
+Predicate for defining objects. 
+
+\mbox{\Hypertarget{_co_simulation_8h_a188a203300a43754c438a2a09142947a}\label{_co_simulation_8h_a188a203300a43754c438a2a09142947a}} 
+\index{CoSimulation.h@{CoSimulation.h}!isSolver@{isSolver}}
+\index{isSolver@{isSolver}!CoSimulation.h@{CoSimulation.h}}
+\doxysubsubsection{\texorpdfstring{isSolver()}{isSolver()}}
+{\footnotesize\ttfamily bool is\+Solver (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+
+
+Predicate for defining objects. 
+
+\mbox{\Hypertarget{_co_simulation_8h_a949e548728e00e8c3e29719056aab572}\label{_co_simulation_8h_a949e548728e00e8c3e29719056aab572}} 
+\index{CoSimulation.h@{CoSimulation.h}!isTask@{isTask}}
+\index{isTask@{isTask}!CoSimulation.h@{CoSimulation.h}}
+\doxysubsubsection{\texorpdfstring{isTask()}{isTask()}}
+{\footnotesize\ttfamily bool is\+Task (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+
+
+Predicate for defining objects. 
+
+\mbox{\Hypertarget{_co_simulation_8h_a0d3b4c4fb0554d8ccb04d12f01d3b028}\label{_co_simulation_8h_a0d3b4c4fb0554d8ccb04d12f01d3b028}} 
+\index{CoSimulation.h@{CoSimulation.h}!parseCoSimulation@{parseCoSimulation}}
+\index{parseCoSimulation@{parseCoSimulation}!CoSimulation.h@{CoSimulation.h}}
+\doxysubsubsection{\texorpdfstring{parseCoSimulation()}{parseCoSimulation()}}
+{\footnotesize\ttfamily int parse\+Co\+Simulation (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classsch__parser__component}{sch\+\_\+parser\+\_\+component}} $>$ \&}]{component\+List,  }\item[{\mbox{\hyperlink{struct_c_f_d_scheme}{CFDScheme}} \&}]{scheme }\end{DoxyParamCaption})}
+
+Parses the Co\+Simulation scheme 
+\begin{DoxyParams}{Parameters}
+{\em component\+List} & List of components read from the schematic \\
+\hline
+{\em scheme} & filling structure for describing the CFD scheme \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if success 
+\end{DoxyReturn}

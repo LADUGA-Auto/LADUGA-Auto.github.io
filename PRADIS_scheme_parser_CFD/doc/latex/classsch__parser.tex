@@ -1,0 +1,160 @@
+\hypertarget{classsch__parser}{}\doxysection{sch\+\_\+parser Class Reference}
+\label{classsch__parser}\index{sch\_parser@{sch\_parser}}
+
+
+Hidden class for working with the scheme.  
+
+
+
+
+{\ttfamily \#include $<$PRADIS\+\_\+scheme\+\_\+parser.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsch__parser_a08711bd2b2b0cc1febb47392a0d1162d}{sch\+\_\+parser}} ()
+\item 
+\mbox{\hyperlink{classsch__parser_a729b92b2bffb92ca48f5b2a5b68277ab}{sch\+\_\+parser}} (std\+::vector$<$ \mbox{\hyperlink{classsch__parser__component}{sch\+\_\+parser\+\_\+component}} $>$ \&list, std\+::string path)
+\item 
+\mbox{\hyperlink{classsch__parser_a1a86a34b1f862a6a8c0386c9fece0e5e}{$\sim$sch\+\_\+parser}} ()
+\item 
+bool \mbox{\hyperlink{classsch__parser_a619d6075e8167998c83916570a5d2bd9}{parse}} (std\+::string \&line)
+\item 
+bool \mbox{\hyperlink{classsch__parser_ab90fde7237c148991ba41748be0fc78d}{read}} (const std\+::string \&file\+\_\+name)
+\item 
+bool \mbox{\hyperlink{classsch__parser_a4949ed8294ece2d7d36aeee7a5e7f967}{read}} (std\+::istream \&stream)
+\item 
+void \mbox{\hyperlink{classsch__parser_a1688bbe83d716ff921c3c070fb700a73}{get\+Component\+List}} (std\+::vector$<$ \mbox{\hyperlink{classsch__parser__component}{sch\+\_\+parser\+\_\+component}} $>$ \&list)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classsch__parser__component}{sch\+\_\+parser\+\_\+component}} $>$ \mbox{\hyperlink{classsch__parser_a97943a6a750073d3a83d2b5270c7997f}{list\+Comp}}
+\begin{DoxyCompactList}\small\item\em List of read components. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classsch__parser_a0313b77f0656fa2dd1f2be8c892c9166}{scheme\+Text}}
+\begin{DoxyCompactList}\small\item\em List to store the read schema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Hidden class for working with the scheme. 
+
+This class reads, parses and stores the received data in its fields 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsch__parser_a08711bd2b2b0cc1febb47392a0d1162d}\label{classsch__parser_a08711bd2b2b0cc1febb47392a0d1162d}} 
+\index{sch\_parser@{sch\_parser}!sch\_parser@{sch\_parser}}
+\index{sch\_parser@{sch\_parser}!sch\_parser@{sch\_parser}}
+\doxysubsubsection{\texorpdfstring{sch\_parser()}{sch\_parser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily sch\+\_\+parser\+::sch\+\_\+parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsch__parser_a729b92b2bffb92ca48f5b2a5b68277ab}\label{classsch__parser_a729b92b2bffb92ca48f5b2a5b68277ab}} 
+\index{sch\_parser@{sch\_parser}!sch\_parser@{sch\_parser}}
+\index{sch\_parser@{sch\_parser}!sch\_parser@{sch\_parser}}
+\doxysubsubsection{\texorpdfstring{sch\_parser()}{sch\_parser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily sch\+\_\+parser\+::sch\+\_\+parser (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classsch__parser__component}{sch\+\_\+parser\+\_\+component}} $>$ \&}]{list,  }\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsch__parser_a1a86a34b1f862a6a8c0386c9fece0e5e}\label{classsch__parser_a1a86a34b1f862a6a8c0386c9fece0e5e}} 
+\index{sch\_parser@{sch\_parser}!````~sch\_parser@{$\sim$sch\_parser}}
+\index{````~sch\_parser@{$\sim$sch\_parser}!sch\_parser@{sch\_parser}}
+\doxysubsubsection{\texorpdfstring{$\sim$sch\_parser()}{~sch\_parser()}}
+{\footnotesize\ttfamily sch\+\_\+parser\+::$\sim$sch\+\_\+parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsch__parser_a1688bbe83d716ff921c3c070fb700a73}\label{classsch__parser_a1688bbe83d716ff921c3c070fb700a73}} 
+\index{sch\_parser@{sch\_parser}!getComponentList@{getComponentList}}
+\index{getComponentList@{getComponentList}!sch\_parser@{sch\_parser}}
+\doxysubsubsection{\texorpdfstring{getComponentList()}{getComponentList()}}
+{\footnotesize\ttfamily void sch\+\_\+parser\+::get\+Component\+List (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classsch__parser__component}{sch\+\_\+parser\+\_\+component}} $>$ \&}]{list }\end{DoxyParamCaption})}
+
+Returns a list of components 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em list} & Link to the list where the data should be returned \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsch__parser_a619d6075e8167998c83916570a5d2bd9}\label{classsch__parser_a619d6075e8167998c83916570a5d2bd9}} 
+\index{sch\_parser@{sch\_parser}!parse@{parse}}
+\index{parse@{parse}!sch\_parser@{sch\_parser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily bool sch\+\_\+parser\+::parse (\begin{DoxyParamCaption}\item[{std\+::string \&}]{line }\end{DoxyParamCaption})}
+
+Parses the read line on components and components propeties 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em line} & Line read from file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsch__parser_ab90fde7237c148991ba41748be0fc78d}\label{classsch__parser_ab90fde7237c148991ba41748be0fc78d}} 
+\index{sch\_parser@{sch\_parser}!read@{read}}
+\index{read@{read}!sch\_parser@{sch\_parser}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool sch\+\_\+parser\+::read (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+Read the .sch scheme by file name, fills field \char`\"{}scheme\+Text\char`\"{} Calls parse only for Components of schema 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file\+\_\+name} & Scheme file name \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em char} & const$\ast$ If unable to read from the file \\
+\hline
+{\em const} & exception\& If the file could not be opened \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+true if success, false if fail 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsch__parser_a4949ed8294ece2d7d36aeee7a5e7f967}\label{classsch__parser_a4949ed8294ece2d7d36aeee7a5e7f967}} 
+\index{sch\_parser@{sch\_parser}!read@{read}}
+\index{read@{read}!sch\_parser@{sch\_parser}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool sch\+\_\+parser\+::read (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream }\end{DoxyParamCaption})}
+
+Read the .sch scheme by std\+::stream\&, fills field \char`\"{}scheme\+Text\char`\"{} Calls parse only for Components of schema 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em stream} & Stream open for reading \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em char} & const$\ast$ If unable to read from the stream \\
+\hline
+{\em const} & exception\& If the stream could not be opened \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+true if success, false if fail 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsch__parser_a97943a6a750073d3a83d2b5270c7997f}\label{classsch__parser_a97943a6a750073d3a83d2b5270c7997f}} 
+\index{sch\_parser@{sch\_parser}!listComp@{listComp}}
+\index{listComp@{listComp}!sch\_parser@{sch\_parser}}
+\doxysubsubsection{\texorpdfstring{listComp}{listComp}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classsch__parser__component}{sch\+\_\+parser\+\_\+component}}$>$ sch\+\_\+parser\+::list\+Comp}
+
+
+
+List of read components. 
+
+\mbox{\Hypertarget{classsch__parser_a0313b77f0656fa2dd1f2be8c892c9166}\label{classsch__parser_a0313b77f0656fa2dd1f2be8c892c9166}} 
+\index{sch\_parser@{sch\_parser}!schemeText@{schemeText}}
+\index{schemeText@{schemeText}!sch\_parser@{sch\_parser}}
+\doxysubsubsection{\texorpdfstring{schemeText}{schemeText}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ sch\+\_\+parser\+::scheme\+Text}
+
+
+
+List to store the read schema. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8h}{PRADIS\+\_\+scheme\+\_\+parser.\+h}}\item 
+\mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp}{PRADIS\+\_\+scheme\+\_\+parser.\+cpp}}\end{DoxyCompactItemize}

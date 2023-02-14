@@ -1,0 +1,218 @@
+\hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp}{}\doxysection{PRADIS\+\_\+scheme\+\_\+parser.\+cpp File Reference}
+\label{_p_r_a_d_i_s__scheme__parser_8cpp}\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+{\ttfamily \#include \char`\"{}PRADIS\+\_\+scheme\+\_\+parser.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Co\+Simulation.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_aa7cb820696f8a66d03330e091482020c}{trim}} (string str)
+\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_a9bd6b4ba1e7c907aae460a048ce2af35}{is\+Double}} (std\+::string const \&str)
+\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_aff03a80a6a87d2ebd5fc5bafbaff9f08}{is\+Integer}} (std\+::string const \&str)
+\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_a23ca7006235573e73a9a6e64f9178e2d}{is\+Co\+Simulation}} (std\+::string Model)
+\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_a65abe5d8d494518769ce4ff98db5e34d}{is\+CFDPort}} (std\+::string Name)
+\begin{DoxyCompactList}\small\item\em Predicate for defining objects. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_a577ccd69ff200e51d2c9d9badba0b451}{is\+Fluid\+Domain}} (std\+::string Name)
+\begin{DoxyCompactList}\small\item\em Predicate for defining objects. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_a36464b2eb7dcab43e770a683b45288ae}{is\+Solid\+Domain}} (std\+::string Name)
+\begin{DoxyCompactList}\small\item\em Predicate for defining objects. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_a188a203300a43754c438a2a09142947a}{is\+Solver}} (std\+::string Name)
+\begin{DoxyCompactList}\small\item\em Predicate for defining objects. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_a949e548728e00e8c3e29719056aab572}{is\+Task}} (std\+::string Name)
+\begin{DoxyCompactList}\small\item\em Predicate for defining objects. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_a5c4f8fdd339c7492d45cba3eaf41de68}{is\+Optimization\+Scheme}} (std\+::string Model)
+\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_a5d997c775b0d37df84627b1c79a8bc26}{is\+Variable}} (std\+::string Model)
+\begin{DoxyCompactList}\small\item\em Predicate for defining objects. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_aa2b3a264aa6a59a4ac5deea1cb16421c}{is\+Data}} (std\+::string Model)
+\begin{DoxyCompactList}\small\item\em Predicate for defining objects. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_a276d0112a9e95535b8817fb0376f1f6c}{is\+Loadcase}} (std\+::string Model)
+\begin{DoxyCompactList}\small\item\em Predicate for defining objects. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_a8121afc8dac0df4083c904cac2316c43}{is\+Optimization}} (std\+::string Model)
+\begin{DoxyCompactList}\small\item\em Predicate for defining objects. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_a6fb3e71f61292f771626ab227193ae8f}{is\+CFDHeader}} (std\+::string Name)
+\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_a927cda15f46b1884bab9e66b6197ec54}{is\+Boundary}} (std\+::string Name)
+\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_a37fede61d93ce0fd0cf0a16abc660162}{is\+Fluid}} (std\+::string Name)
+\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_a00715770ac797fbc81a50d713fbf6373}{is\+Domain}} (std\+::string Name)
+\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_a5dcc0556499cf775623150441a1bbfb3}{is\+Parameter}} (std\+::string Name)
+\item 
+bool \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_a7b089fc90e39f2fde2ab4a0bd5fe60d7}{is\+Port}} (std\+::string Name)
+\item 
+void \mbox{\hyperlink{_p_r_a_d_i_s__scheme__parser_8cpp_a108636baabc6638e4b10de0a5ca3dd72}{fill\+Property\+Name}} (\mbox{\hyperlink{classsch__parser__component}{sch\+\_\+parser\+\_\+component}} $\ast$pc)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_a108636baabc6638e4b10de0a5ca3dd72}\label{_p_r_a_d_i_s__scheme__parser_8cpp_a108636baabc6638e4b10de0a5ca3dd72}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!fillPropertyName@{fillPropertyName}}
+\index{fillPropertyName@{fillPropertyName}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{fillPropertyName()}{fillPropertyName()}}
+{\footnotesize\ttfamily void fill\+Property\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsch__parser__component}{sch\+\_\+parser\+\_\+component}} $\ast$}]{pc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_a927cda15f46b1884bab9e66b6197ec54}\label{_p_r_a_d_i_s__scheme__parser_8cpp_a927cda15f46b1884bab9e66b6197ec54}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isBoundary@{isBoundary}}
+\index{isBoundary@{isBoundary}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isBoundary()}{isBoundary()}}
+{\footnotesize\ttfamily bool is\+Boundary (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_a6fb3e71f61292f771626ab227193ae8f}\label{_p_r_a_d_i_s__scheme__parser_8cpp_a6fb3e71f61292f771626ab227193ae8f}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isCFDHeader@{isCFDHeader}}
+\index{isCFDHeader@{isCFDHeader}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isCFDHeader()}{isCFDHeader()}}
+{\footnotesize\ttfamily bool is\+CFDHeader (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_a65abe5d8d494518769ce4ff98db5e34d}\label{_p_r_a_d_i_s__scheme__parser_8cpp_a65abe5d8d494518769ce4ff98db5e34d}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isCFDPort@{isCFDPort}}
+\index{isCFDPort@{isCFDPort}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isCFDPort()}{isCFDPort()}}
+{\footnotesize\ttfamily bool is\+CFDPort (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+
+
+Predicate for defining objects. 
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_a23ca7006235573e73a9a6e64f9178e2d}\label{_p_r_a_d_i_s__scheme__parser_8cpp_a23ca7006235573e73a9a6e64f9178e2d}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isCoSimulation@{isCoSimulation}}
+\index{isCoSimulation@{isCoSimulation}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isCoSimulation()}{isCoSimulation()}}
+{\footnotesize\ttfamily bool is\+Co\+Simulation (\begin{DoxyParamCaption}\item[{std\+::string}]{Model }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_aa2b3a264aa6a59a4ac5deea1cb16421c}\label{_p_r_a_d_i_s__scheme__parser_8cpp_aa2b3a264aa6a59a4ac5deea1cb16421c}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isData@{isData}}
+\index{isData@{isData}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isData()}{isData()}}
+{\footnotesize\ttfamily bool is\+Data (\begin{DoxyParamCaption}\item[{std\+::string}]{Model }\end{DoxyParamCaption})}
+
+
+
+Predicate for defining objects. 
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_a00715770ac797fbc81a50d713fbf6373}\label{_p_r_a_d_i_s__scheme__parser_8cpp_a00715770ac797fbc81a50d713fbf6373}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isDomain@{isDomain}}
+\index{isDomain@{isDomain}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isDomain()}{isDomain()}}
+{\footnotesize\ttfamily bool is\+Domain (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_a9bd6b4ba1e7c907aae460a048ce2af35}\label{_p_r_a_d_i_s__scheme__parser_8cpp_a9bd6b4ba1e7c907aae460a048ce2af35}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isDouble@{isDouble}}
+\index{isDouble@{isDouble}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isDouble()}{isDouble()}}
+{\footnotesize\ttfamily bool is\+Double (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{str }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_a37fede61d93ce0fd0cf0a16abc660162}\label{_p_r_a_d_i_s__scheme__parser_8cpp_a37fede61d93ce0fd0cf0a16abc660162}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isFluid@{isFluid}}
+\index{isFluid@{isFluid}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isFluid()}{isFluid()}}
+{\footnotesize\ttfamily bool is\+Fluid (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_a577ccd69ff200e51d2c9d9badba0b451}\label{_p_r_a_d_i_s__scheme__parser_8cpp_a577ccd69ff200e51d2c9d9badba0b451}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isFluidDomain@{isFluidDomain}}
+\index{isFluidDomain@{isFluidDomain}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isFluidDomain()}{isFluidDomain()}}
+{\footnotesize\ttfamily bool is\+Fluid\+Domain (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+
+
+Predicate for defining objects. 
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_aff03a80a6a87d2ebd5fc5bafbaff9f08}\label{_p_r_a_d_i_s__scheme__parser_8cpp_aff03a80a6a87d2ebd5fc5bafbaff9f08}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isInteger@{isInteger}}
+\index{isInteger@{isInteger}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isInteger()}{isInteger()}}
+{\footnotesize\ttfamily bool is\+Integer (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{str }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_a276d0112a9e95535b8817fb0376f1f6c}\label{_p_r_a_d_i_s__scheme__parser_8cpp_a276d0112a9e95535b8817fb0376f1f6c}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isLoadcase@{isLoadcase}}
+\index{isLoadcase@{isLoadcase}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isLoadcase()}{isLoadcase()}}
+{\footnotesize\ttfamily bool is\+Loadcase (\begin{DoxyParamCaption}\item[{std\+::string}]{Model }\end{DoxyParamCaption})}
+
+
+
+Predicate for defining objects. 
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_a8121afc8dac0df4083c904cac2316c43}\label{_p_r_a_d_i_s__scheme__parser_8cpp_a8121afc8dac0df4083c904cac2316c43}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isOptimization@{isOptimization}}
+\index{isOptimization@{isOptimization}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isOptimization()}{isOptimization()}}
+{\footnotesize\ttfamily bool is\+Optimization (\begin{DoxyParamCaption}\item[{std\+::string}]{Model }\end{DoxyParamCaption})}
+
+
+
+Predicate for defining objects. 
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_a5c4f8fdd339c7492d45cba3eaf41de68}\label{_p_r_a_d_i_s__scheme__parser_8cpp_a5c4f8fdd339c7492d45cba3eaf41de68}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isOptimizationScheme@{isOptimizationScheme}}
+\index{isOptimizationScheme@{isOptimizationScheme}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isOptimizationScheme()}{isOptimizationScheme()}}
+{\footnotesize\ttfamily bool is\+Optimization\+Scheme (\begin{DoxyParamCaption}\item[{std\+::string}]{Model }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_a5dcc0556499cf775623150441a1bbfb3}\label{_p_r_a_d_i_s__scheme__parser_8cpp_a5dcc0556499cf775623150441a1bbfb3}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isParameter@{isParameter}}
+\index{isParameter@{isParameter}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isParameter()}{isParameter()}}
+{\footnotesize\ttfamily bool is\+Parameter (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_a7b089fc90e39f2fde2ab4a0bd5fe60d7}\label{_p_r_a_d_i_s__scheme__parser_8cpp_a7b089fc90e39f2fde2ab4a0bd5fe60d7}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isPort@{isPort}}
+\index{isPort@{isPort}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isPort()}{isPort()}}
+{\footnotesize\ttfamily bool is\+Port (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_a36464b2eb7dcab43e770a683b45288ae}\label{_p_r_a_d_i_s__scheme__parser_8cpp_a36464b2eb7dcab43e770a683b45288ae}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isSolidDomain@{isSolidDomain}}
+\index{isSolidDomain@{isSolidDomain}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isSolidDomain()}{isSolidDomain()}}
+{\footnotesize\ttfamily bool is\+Solid\+Domain (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+
+
+Predicate for defining objects. 
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_a188a203300a43754c438a2a09142947a}\label{_p_r_a_d_i_s__scheme__parser_8cpp_a188a203300a43754c438a2a09142947a}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isSolver@{isSolver}}
+\index{isSolver@{isSolver}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isSolver()}{isSolver()}}
+{\footnotesize\ttfamily bool is\+Solver (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+
+
+Predicate for defining objects. 
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_a949e548728e00e8c3e29719056aab572}\label{_p_r_a_d_i_s__scheme__parser_8cpp_a949e548728e00e8c3e29719056aab572}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isTask@{isTask}}
+\index{isTask@{isTask}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isTask()}{isTask()}}
+{\footnotesize\ttfamily bool is\+Task (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+
+
+Predicate for defining objects. 
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_a5d997c775b0d37df84627b1c79a8bc26}\label{_p_r_a_d_i_s__scheme__parser_8cpp_a5d997c775b0d37df84627b1c79a8bc26}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!isVariable@{isVariable}}
+\index{isVariable@{isVariable}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{isVariable()}{isVariable()}}
+{\footnotesize\ttfamily bool is\+Variable (\begin{DoxyParamCaption}\item[{std\+::string}]{Model }\end{DoxyParamCaption})}
+
+
+
+Predicate for defining objects. 
+
+\mbox{\Hypertarget{_p_r_a_d_i_s__scheme__parser_8cpp_aa7cb820696f8a66d03330e091482020c}\label{_p_r_a_d_i_s__scheme__parser_8cpp_aa7cb820696f8a66d03330e091482020c}} 
+\index{PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}!trim@{trim}}
+\index{trim@{trim}!PRADIS\_scheme\_parser.cpp@{PRADIS\_scheme\_parser.cpp}}
+\doxysubsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily string trim (\begin{DoxyParamCaption}\item[{string}]{str }\end{DoxyParamCaption})}
+

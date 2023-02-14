@@ -1,0 +1,153 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: qucs - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\FIRST\LOCALS~1\Temp\RSP68C.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /Gi /GX /ZI /Od /I "../Qucs" /I "C:\Qt\3.3.4/include" /D "__MINGW32__" /D "WIN32" /D "_DEBUG" /D "_USRDLL" /D "_WINDOWS" /D "UNICODE" /D "QT_DLL" /D "QT_THREAD_SUPPORT" /D "QT_ACCESSIBILITY_SUPPORT" /D "HAVE_CONFIG_H" /FAs /Fa"C:\PRADISWORK\lib\debug-vc6/" /FR"C:\PRADISWORK\lib\debug-vc6/" /Fp"C:\PRADISWORK\lib\debug-vc6/qucs.pch" /YX /Fo"C:\PRADISWORK\lib\debug-vc6/" /Fd"C:\PRADISWORK\lib\debug-vc6/" /FD /GZ /c 
+"C:\PRADISWORK\src\Qucs\qucs\components\component.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\pradis\PRADISComponent.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\pradis\PRADISData.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\pradis\PRADISGround.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\pradis\PRADISSubcirPort.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\pradis\PRADISSubScheme.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\pradis\PSLSubScheme.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\diagrams\curvediagram.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\diagrams\diagram.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\diagrams\graph.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\diagrams\marker.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\diagrams\polardiagram.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\diagrams\psdiagram.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\diagrams\rect3ddiagram.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\diagrams\rectdiagram.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\diagrams\smithdiagram.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\diagrams\tabdiagram.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\diagrams\timingdiagram.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\diagrams\truthdiagram.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\paintings\arrow.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\paintings\ellipse.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\paintings\ellipsearc.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\paintings\graphicline.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\paintings\graphictext.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\paintings\id_text.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\paintings\painting.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\paintings\portsymbol.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\paintings\rectangle.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\element.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\mainqucs.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\node.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\schematic.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\schematic_element.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\schParser.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\wire.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\wirelabel.cpp"
+"C:\PRADISWORK\src\Qucs\qucs\BaseElement.cpp"
+"C:\PRADISWORK\src\Qucs\adm\parser\main.cpp"
+"C:\PRADISWORK\src\Qucs\adm\parserComponent.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\FIRST\LOCALS~1\Temp\RSP68C.tmp" 
+Creating temporary file "C:\DOCUME~1\FIRST\LOCALS~1\Temp\RSP68D.tmp" with contents
+[
+"C:\Qt\3.3.4\lib\qt-mt334.lib" "opengl32.lib" "glu32.lib" "delayimp.lib" "kernel32.lib" "user32.lib" "gdi32.lib" "comdlg32.lib" "advapi32.lib" "shell32.lib" "ole32.lib" "oleaut32.lib" "uuid.lib" "imm32.lib" "winmm.lib" "wsock32.lib" "winspool.lib" "kernel32.lib" "user32.lib" "gdi32.lib" "comdlg32.lib" "advapi32.lib" "shell32.lib" "ole32.lib" "oleaut32.lib" "uuid.lib" "imm32.lib" "winmm.lib" "wsock32.lib" "winspool.lib" /nologo /subsystem:windows /dll /incremental:yes /pdb:"C:\PRADISWORK\lib\debug-vc6/PRADIS_scheme_parser.pdb" /debug /machine:I386 /nodefaultlib:"msvcrt.lib" /def:".\parser\parser.def" /out:"C:\DINAMA\Qucs\bin\PRADIS_scheme_parser.dll" /implib:"C:\PRADISWORK\lib\debug-vc6/PRADIS_scheme_parser.lib" /pdbtype:sept /libpath:"C:\Qt\4.7.2\lib" 
+"\PRADISWORK\lib\debug-vc6\component.obj"
+"\PRADISWORK\lib\debug-vc6\PRADISComponent.obj"
+"\PRADISWORK\lib\debug-vc6\PRADISData.obj"
+"\PRADISWORK\lib\debug-vc6\PRADISGround.obj"
+"\PRADISWORK\lib\debug-vc6\PRADISSubcirPort.obj"
+"\PRADISWORK\lib\debug-vc6\PRADISSubScheme.obj"
+"\PRADISWORK\lib\debug-vc6\PSLSubScheme.obj"
+"\PRADISWORK\lib\debug-vc6\curvediagram.obj"
+"\PRADISWORK\lib\debug-vc6\diagram.obj"
+"\PRADISWORK\lib\debug-vc6\graph.obj"
+"\PRADISWORK\lib\debug-vc6\marker.obj"
+"\PRADISWORK\lib\debug-vc6\polardiagram.obj"
+"\PRADISWORK\lib\debug-vc6\psdiagram.obj"
+"\PRADISWORK\lib\debug-vc6\rect3ddiagram.obj"
+"\PRADISWORK\lib\debug-vc6\rectdiagram.obj"
+"\PRADISWORK\lib\debug-vc6\smithdiagram.obj"
+"\PRADISWORK\lib\debug-vc6\tabdiagram.obj"
+"\PRADISWORK\lib\debug-vc6\timingdiagram.obj"
+"\PRADISWORK\lib\debug-vc6\truthdiagram.obj"
+"\PRADISWORK\lib\debug-vc6\arrow.obj"
+"\PRADISWORK\lib\debug-vc6\ellipse.obj"
+"\PRADISWORK\lib\debug-vc6\ellipsearc.obj"
+"\PRADISWORK\lib\debug-vc6\graphicline.obj"
+"\PRADISWORK\lib\debug-vc6\graphictext.obj"
+"\PRADISWORK\lib\debug-vc6\id_text.obj"
+"\PRADISWORK\lib\debug-vc6\painting.obj"
+"\PRADISWORK\lib\debug-vc6\portsymbol.obj"
+"\PRADISWORK\lib\debug-vc6\rectangle.obj"
+"\PRADISWORK\lib\debug-vc6\element.obj"
+"\PRADISWORK\lib\debug-vc6\mainqucs.obj"
+"\PRADISWORK\lib\debug-vc6\node.obj"
+"\PRADISWORK\lib\debug-vc6\schematic.obj"
+"\PRADISWORK\lib\debug-vc6\schematic_element.obj"
+"\PRADISWORK\lib\debug-vc6\schParser.obj"
+"\PRADISWORK\lib\debug-vc6\wire.obj"
+"\PRADISWORK\lib\debug-vc6\wirelabel.obj"
+"\PRADISWORK\lib\debug-vc6\BaseElement.obj"
+"\PRADISWORK\lib\debug-vc6\main.obj"
+"\PRADISWORK\lib\debug-vc6\parserComponent.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\FIRST\LOCALS~1\Temp\RSP68D.tmp"
+<h3>Output Window</h3>
+Compiling...
+component.cpp
+PRADISComponent.cpp
+PRADISData.cpp
+PRADISGround.cpp
+PRADISSubcirPort.cpp
+PRADISSubScheme.cpp
+PSLSubScheme.cpp
+curvediagram.cpp
+diagram.cpp
+graph.cpp
+marker.cpp
+polardiagram.cpp
+psdiagram.cpp
+rect3ddiagram.cpp
+rectdiagram.cpp
+smithdiagram.cpp
+tabdiagram.cpp
+timingdiagram.cpp
+truthdiagram.cpp
+arrow.cpp
+ellipse.cpp
+ellipsearc.cpp
+graphicline.cpp
+graphictext.cpp
+id_text.cpp
+painting.cpp
+portsymbol.cpp
+rectangle.cpp
+element.cpp
+mainqucs.cpp
+node.cpp
+schematic.cpp
+schematic_element.cpp
+schParser.cpp
+c:\qt\3.3.4\include\qptrlist.h(150) : warning C4150: deletion of pointer to incomplete type 'Node'; no destructor called
+        c:\pradiswork\src\qucs\qucs\element.h(24) : see declaration of 'Node'
+        c:\program files\microsoft visual studio\vc98\include\xstring(583) : while compiling class-template member function 'void __thiscall QPtrList<class Node>::deleteItem(void *)'
+wire.cpp
+wirelabel.cpp
+BaseElement.cpp
+main.cpp
+c:\qt\3.3.4\include\qptrlist.h(150) : warning C4150: deletion of pointer to incomplete type 'Node'; no destructor called
+        c:\pradiswork\src\qucs\qucs\element.h(24) : see declaration of 'Node'
+        c:\program files\microsoft visual studio\vc98\include\xstring(583) : while compiling class-template member function 'void __thiscall QPtrList<class Node>::deleteItem(void *)'
+parserComponent.cpp
+Linking...
+   Creating library C:\PRADISWORK\lib\debug-vc6/PRADIS_scheme_parser.lib and object C:\PRADISWORK\lib\debug-vc6/PRADIS_scheme_parser.exp
+
+
+
+<h3>Results</h3>
+PRADIS_scheme_parser.dll - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

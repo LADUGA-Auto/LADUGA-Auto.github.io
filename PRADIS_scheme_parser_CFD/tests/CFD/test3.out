@@ -1,0 +1,23 @@
+[ Module ]      |      [ Name ]       |      [ Active ]       |      [ Properties ]
+[ CoSimulation.Port ] | [ Port1 ] | [ true ]  |  [ Name : P1 : string ]    [ Interface : Fluid : string ]    
+
+[ CoSimulation.Port ] | [ Port2 ] | [ true ]  |  [ Name :  : string ]    [ Interface : ThermalFluid : string ]    
+
+[ CoSimulation.Port ] | [ Port3 ] | [ true ]  |  [ Name : P3 : string ]    [ Interface : Thermal : string ]    
+
+[ CoSimulation.Port ] | [ Port4 ] | [ true ]  |  [ Name : P4 : string ]    [ Interface : XYZ : string ]    
+
+[ CoSimulation.Port ] | [ Port5 ] | [ true ]  |  [ Name : P5 : string ]    [ Interface : Point : string ]    
+
+[ CoSimulation.Port ] | [ Port6 ] | [ true ]  |  [ Name : P6 : string ]    [ Interface : Point2d : string ]    
+
+[ CoSimulation.Port ] | [ Port7 ] | [ true ]  |  [ Name : P7 : string ]    [ Interface : DOF1 : string ]    
+
+[ CoSimulation.Port ] | [ Port8 ] | [ true ]  |  [ Name : P8 : string ]    [ Interface : Electrical : string ]    
+
+[ CoSimulation.Task ] | [ Task1 ] | [ true ]  |  [ File : resulfile : string ]    [ Description : resultDesc : string ]    
+
+[ CoSimulation.SolidDomain ] | [ SolidDomain1 ] | [ true ]  |  [ Solid : stone : string ]    [ Velocity : 10 : double ]    [ Temperature : 2.6 : double ]    [ RotationalVelocity : 45.1 : double ]    
+
+[ CoSimulation.Solver ] | [ Solver1 ] | [ true ]  |  [ EndTime : 60.6 : double ]    [ MaximalIterationCount : 10 : integer ]    [ Tolerance : 0.5 : double ]    [ Flag.GetJacobian :  : string ]    
+

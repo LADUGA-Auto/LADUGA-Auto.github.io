@@ -1,0 +1,13 @@
+[ Module ]      |      [ Name ]       |      [ Active ]       |      [ Properties ]
+[ CoSimulation.SolidDomain ] | [ SolidDomain1 ] | [ true ] | [ Solid : Сталь : string ]    [ Velocity : 0 : integer ]    [ Temperature : 25 : integer ]    [ RotationalVelocity : 10 : double ]    
+
+[ CoSimulation.Port ] | [ Port1 ] | [ true ] | [ Name : первый порт : string ]    [ Interface : ThermalFluid : string ]    
+
+[ CoSimulation.Port ] | [ Port2 ] | [ true ] | [ Name : второй порт : string ]    [ Interface : Thermal : string ]    
+
+[ CoSimulation.Port ] | [ Port3 ] | [ true ] | [ Name : третий порт : string ]    [ Interface : XYZ : string ]    
+
+[ CoSimulation.Solver ] | [ Solver1 ] | [ true ] | [ EndTime : 90 : integer ]    [ MaximalIterationCount : 5 : integer ]    [ Tolerance : 0 : double ]    [ Flag.GetJacobian : jacobian : string ]    
+
+[ CoSimulation.Task ] | [ Task1 ] | [ true ] | [ File : resultFile : string ]    [ Description : resultDesc : string ]    
+
